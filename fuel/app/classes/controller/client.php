@@ -19,4 +19,13 @@ class Controller_Client extends Controller_Template
         $this->template->content = View::forge('client/detail', compact('client'));
     }
 
+    public function action_create()
+    {
+        $businessforms = Model_Businessform::find('all');
+        $businesstypes = Model_Businesstype::find('all');
+
+        $this->template->set_global('page_name', '顧客新規登録');
+        $this->template->content = View::forge('client/form', compact('businessforms', 'businesstypes'));
+    }
+
 }

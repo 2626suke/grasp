@@ -4,7 +4,7 @@
     </div>
     <div class="table-upper">
         <p>
-            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> New</a>
+            <a href="/client/create/" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> New</a>
             <a href="#search-form" class="btn btn-default" data-toggle="collapse"><span class="glyphicon glyphicon-search"></span> Search</a>
         </p>
         <div class="collapse" id="search-form">
@@ -54,7 +54,7 @@
             </thead>
             <tbody>
                 <?php foreach ($clients as $client): ?>
-                    <tr data-href="#">
+                    <tr data-href="<?php echo '/client/detail/' . $client->id . '/'; ?>">
                         <td><?php echo $client->name; ?></td>
                         <td><?php echo $client->zip; ?></td>
                         <td><?php echo $client->address; ?></td>
