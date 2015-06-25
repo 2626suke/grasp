@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $page_name; ?> - Grasp</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/common.css" rel="stylesheet">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/common.js"></script>
+        <?php echo Asset::css('bootstrap.min.css'); ?>
+        <?php echo Asset::css('common.css'); ?>
+        <?php echo Asset::js('jquery.min.js'); ?>
+        <?php echo Asset::js('bootstrap.min.js'); ?>
+        <?php echo Asset::js('common.js'); ?>
     </head>
     <body>
         <nav class="navbar navbar-default">
