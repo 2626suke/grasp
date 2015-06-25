@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* Header */
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Contents */
+.main-contents {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+/* Table */
+.table {
+    border: 1px solid #ddd;
+}
+
+tr[data-href] {
+    cursor: pointer;
+}
+
+th a {
+    color: #333;
+}
+
+th .glyphicon {
+    color: #ccc
+}
+
+/* For Detail Table */
+.detail-table th {
+    background-color: #f9f9f9;
+}
+
+/* Table Upper */
+.table-upper {
+    margin: 0 0 14px 0;
+}
+
+.table-upper form {
+    border: 1px dotted #ddd;
+    padding: 10px 10px 5px 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 0;
+}
+
+.table-upper select {
+    height: 36px;
+    width: 100%;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: -6px;
+}
+
+/* Form */
+form {
+    margin-bottom: 22px;
+}
+
+.checkbox-inline label,
+.radio-inline label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+form h2 {
+    background-color: #f9f9f9;
+    padding: 5px 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+form .divid-form {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Login */
+.login-form {
+    background-color: #fff;
+    padding: 15px 15px 0;
+    border-radius: 2px;
+}
+
+.login-form .nav
+{
+    margin-bottom: 15px;
+}
