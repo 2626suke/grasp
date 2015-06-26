@@ -54,13 +54,13 @@
             </thead>
             <tbody>
                 <?php foreach ($clients as $client): ?>
-                    <tr data-href="<?php echo '/client/detail/' . $client->id . '/'; ?>">
+                    <tr data-href="/client/detail/<?php echo $client->id; ?>/">
                         <td><?php echo $client->name; ?></td>
                         <td><?php echo $client->zip; ?></td>
                         <td><?php echo $client->address; ?></td>
                         <td><?php echo $client->tel; ?></td>
                         <td>
-                            <a class="btn btn-default btn-xs" href="#"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                            <a class="btn btn-default btn-xs" href="/client/edit/<?php echo $client->id; ?>/"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
                             <a class="btn btn-default btn-xs" href="#"><span class="glyphicon glyphicon-trash"></span> Del</a>
                         </td>
                     </tr>

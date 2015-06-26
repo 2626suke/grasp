@@ -3,7 +3,7 @@
         <h1><?php echo $page_name; ?></h1>
     </div>
     <div class="table-upper">
-        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+        <a href="/client/edit/<?php echo $client->id; ?>/" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
         <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> Del</a>
     </div>
     <table class="table table-bordered detail-table">

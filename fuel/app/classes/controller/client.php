@@ -34,4 +34,21 @@ class Controller_Client extends Controller_Template
         $this->template->content = View::forge('client/form', compact('businessforms', 'businesstypes'));
     }
 
+    public function action_edit($client_id)
+    {
+        $client = Model_Client::find($client_id);
+
+        if (Input::method() === 'POST') {
+            $client->set(array_filter(Input::post()));
+            $client->save();
+            Response::redirect('client/list');
+        }
+
+        $businessforms = Model_Businessform::find('all');
+        $businesstypes = Model_Businesstype::find('all');
+
+        $this->template->set_global('page_name', '顧客情報編集');
+        $this->template->content = View::forge('client/form', compact('client', 'businessforms', 'businesstypes'));
+    }
+
 }
