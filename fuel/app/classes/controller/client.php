@@ -21,6 +21,12 @@ class Controller_Client extends Controller_Template
 
     public function action_create()
     {
+        if (Input::method() === 'POST') {
+            $client = Model_Client::forge(array_filter(Input::post()));
+            $client->save();
+            Response::redirect('client/list');
+        }
+
         $businessforms = Model_Businessform::find('all');
         $businesstypes = Model_Businesstype::find('all');
 

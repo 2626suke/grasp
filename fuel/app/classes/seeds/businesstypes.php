@@ -11,33 +11,24 @@ class Businesstypes
         \DB::insert(
                 'businesstypes'
         )->columns(array(
-            'name',
-            'kbn'
+            'name'
                 )
         )->values(array(
-            '小売業',
-            '01'
+            '小売業'
                 ), array(
-            '建設業',
-            '02'
+            '建設業'
                 ), array(
-            '製造業',
-            '03'
+            '製造業'
                 ), array(
-            '卸売業',
-            '04'
+            '卸売業'
                 ), array(
-            '飲食業',
-            '05'
+            '飲食業'
                 ), array(
-            '理美容業',
-            '06'
+            '理美容業'
                 ), array(
-            'IT業',
-            '07'
+            'IT業'
                 ), array(
-            'サービス業',
-            '08'
+            'サービス業'
                 )
         )->execute();
     }

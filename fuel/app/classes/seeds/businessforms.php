@@ -11,36 +11,26 @@ class Businessforms
         \DB::insert(
                 'businessforms'
         )->columns(array(
-            'name',
-            'kbn'
+            'name'
                 )
         )->values(array(
-            '株式会社',
-            '01'
+            '株式会社'
                 ), array(
-            '有限会社',
-            '02'
+            '有限会社'
                 ), array(
-            '合同会社',
-            '03'
+            '合同会社'
                 ), array(
-            '合資会社',
-            '04'
+            '合資会社'
                 ), array(
-            '合名会社',
-            '05'
+            '合名会社'
                 ), array(
-            '社団法人',
-            '06'
+            '社団法人'
                 ), array(
-            '財団法人',
-            '07'
+            '財団法人'
                 ), array(
-            'NPO法人',
-            '08'
+            'NPO法人'
                 ), array(
-            '個人事業',
-            '09'
+            '個人事業'
                 )
         )->execute();
     }

@@ -18,10 +18,6 @@ class Create_businessforms
                 'constraint' => 10,
                 'type' => 'varchar'
             ),
-            'kbn' => array(
-                'constraint' => 2,
-                'type' => 'varchar'
-            )
                 ), array('id'));
     }
 
