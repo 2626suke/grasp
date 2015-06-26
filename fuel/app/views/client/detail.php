@@ -4,7 +4,7 @@
     </div>
     <div class="table-upper">
         <a href="/client/edit/<?php echo $client->id; ?>/" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
-        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> Del</a>
+        <a href="/client/delete/<?php echo $client->id; ?>/" class="btn btn-default" onclick="return confirm('本当によろしいですか？')"><span class="glyphicon glyphicon-trash"></span> Del</a>
     </div>
     <table class="table table-bordered detail-table">
         <tr>

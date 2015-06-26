@@ -61,7 +61,7 @@
                         <td><?php echo $client->tel; ?></td>
                         <td>
                             <a class="btn btn-default btn-xs" href="/client/edit/<?php echo $client->id; ?>/"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
-                            <a class="btn btn-default btn-xs" href="#"><span class="glyphicon glyphicon-trash"></span> Del</a>
+                            <a class="btn btn-default btn-xs" href="/client/delete/<?php echo $client->id; ?>/" onclick="return confirm('本当によろしいですか？')"><span class="glyphicon glyphicon-trash"></span> Del</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

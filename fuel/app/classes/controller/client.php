@@ -51,4 +51,11 @@ class Controller_Client extends Controller_Template
         $this->template->content = View::forge('client/form', compact('client', 'businessforms', 'businesstypes'));
     }
 
+    public function action_delete($client_id)
+    {
+        $client = Model_Client::find($client_id);
+        $client->delete();
+        Response::redirect('client/list');
+    }
+
 }
