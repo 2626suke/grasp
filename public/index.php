@@ -14,10 +14,10 @@
  * Set error reporting and display errors settings.  You will want to change these when in production.
  */
 error_reporting(-1);
-if (isset($_SERVER['FUEL_ENV']) && $_SERVER['FUEL_ENV'] === 'production') {
-    ini_set('display_errors', 0);
-} else {
+if (isset($_SERVER['FUEL_ENV'])) {
     ini_set('display_errors', 1);
+} else {
+    ini_set('display_errors', 0);
 }
 
 /**
