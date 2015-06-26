@@ -8,7 +8,7 @@ return array(
         'connection' => array(
             'dsn' => 'mysql:host=mysql025.phy.lolipop.lan;dbname=LAA0501775-grasp',
             'username' => 'LAA0501775',
-            'password' => $_SERVER['MYSQL_PASSWORD'],
+            'password' => 'dummy',
         ),
     ),
 );
